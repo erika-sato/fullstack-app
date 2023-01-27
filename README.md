@@ -45,7 +45,7 @@ FULLSTACK APP
 3. Acesse a pasta do arquivo: `cd backend`;<br />
 4. No terminal, digitar o comando: `yarn` ou `npm i` para instalar as dependências da aplicação;
 5. Rode o comando: `yarn dev` ou `npm run dev` para iniciar a aplicação;
-6. Acesse [http://localhost:3333](http://localhost:3333) para visualizar a aplicação no browser.
+6. Acesse a documentação na rota a seguir: [http://localhost:3333/api-docs](http://localhost:3333/api-docs)
 
 #### FRONT-END
 7. Acesse a pasta do arquivo: `cd frontend`;<br />
