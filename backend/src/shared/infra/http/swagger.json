@@ -1,0 +1,81 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Fullstack Test Documentation",
+    "description": "This is Fullstack Test API",
+    "version": "1.0.0",
+    "contact": {
+      "email": "eerikasato@gmail.com"
+    }
+  },
+  "paths": {
+    "/products": {
+      "get": {
+        "tags": [
+          "Products"
+        ],
+        "parameters": {
+          "search": {
+            "type": "string"
+          }
+        },
+        "summary": "Get products",
+        "description": "Returns products from BEUNI API",
+        "responses": {
+          "201": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                     "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "imageUrl": {
+                      "type": "Array"
+                    },
+                    "hasFreeShipping": {
+                      "type": "boolean"
+                    },
+                      "rating": {
+                      "type": "number"
+                    },
+                      "minimumQuantity": {
+                      "type": "number"
+                    },
+                      "totalStock": {
+                      "type": "number"
+                    },
+                      "price": {
+                      "type": "number"
+                    }
+                  },
+                  "example": {
+                    "id": "1",
+                    "name": "Camiseta",
+                    "description": "Apenas uma camiseta",
+                    "imageUrl": "[]",
+                    "hasFreeShipping": "true",
+                    "rating": "5",
+                    "minimumQuantity": "50",
+                    "totalStock": "150",
+                    "price": "10.50"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "This product does not exists"
+          }
+        }
+      }
+    }
+  }
+}
